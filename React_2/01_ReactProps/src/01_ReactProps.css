@@ -1,0 +1,53 @@
+/* ReactProps.css */
+
+/* Style for the main container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for the heading */
+  h1 {
+    color: #d37a7a;
+    font-size: 24px;
+  }
+  
+  /* Style for the button */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the paragraph */
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: #0056b3 1px dotted;
+  }
+  
+  /* Style for the list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Style for the child component container */
+  .child-container {
+    background-color: magenta;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
