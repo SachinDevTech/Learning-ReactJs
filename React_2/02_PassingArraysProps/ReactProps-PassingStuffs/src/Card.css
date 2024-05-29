@@ -1,0 +1,16 @@
+.cardStyle{
+    width: 60%;
+    height: 40%;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 1rem;
+}
+
+.cardStyle h2{
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+}
