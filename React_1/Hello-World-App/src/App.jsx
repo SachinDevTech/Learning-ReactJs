@@ -6,7 +6,7 @@ function App() {
   // _____________________________________________________________________________________
   // return <h1>Hello World!</h1>; //1. Here you can't return multiple stuffs only one html statement will be render. So,
   // _______________________________________________________________________________________
-  // return <Greet />; //2. We are returning component named Greet, One more Way is their:
+  // return <Greet />; //2. We are returning component named Greet, One more Way is there:
   // _____________________________________________________________________________________
 
   return (//We are using fragments to make it more optimal way of rendering multiple components.
