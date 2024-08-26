@@ -1,33 +1,25 @@
 import { useState } from "react";
 
 function Counter() {
-  // This won't re-render on updation.
-  //   let count = 0;
+  // Declare a state variable 'count' initialized to 0, and a function 'setCount' to update it.
+  const [count, setCount] = useState(0);
 
+  // Function to increment the count
   function incCount() {
-    //Direct call to the Updater Function
-    setCount(count + 1); //setCount is an updater fxn that is called
-    console.log(count + 1);
+    // Update the count directly by adding 1
+    setCount(count + 1);
+    console.log(`Direct update: ${count + 1}`);
 
+    // Alternatively, using the updater function pattern with a callback.
+    // This approach is useful when the new state depends on the previous state.
+    // Here, two consecutive updates are made. The state will update twice
+    // leading to increments of +2 each time this function is called.
 
-    //Callback in updater function
-    // setCount((currCount)=>{
-    //   return currCount + 1;
-    // })
-    // setCount((currCount)=>{
-    //   return currCount + 1;
-    // })
-    // console.log(count);
-    
+    // setCount((prevCount) => prevCount + 1);
+    // setCount((prevCount) => prevCount + 1);
+    // console.log(`Callback update: ${count}`);
   }
 
-  //So we use useState hooks:
-  //let arr = useState(0); // If you will pass 10 then at initial state 10 will be passed.
-  //let [stateVariable, setStatevariable] = useState(11); //actual format
-
-  let [count, setCount] = useState(0);
-
-  console.log();
   return (
     <>
       <div>

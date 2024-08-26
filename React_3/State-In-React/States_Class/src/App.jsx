@@ -1,15 +1,15 @@
-import './App.css'
-import { Counter } from './Counter'
-import { LikeButton } from './LikeButton'
+import "./App.css";
+import { Counter } from "./Counter";
+import { LikeButton } from "./LikeButton";
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-    <Counter/>
-    <LikeButton/>
+      <Counter />
+      <LikeButton />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,20 +1,28 @@
 import { useState } from "react";
 
 function LikeButton() {
-  // This state can only be used inside the component function not outside.
-  let [isLiked, setLiked] = useState();
-  let [clicks, setClicks] = useState(0);
+  // State to track if the button is liked or not, initialized to false.
+  const [isLiked, setLiked] = useState(false);
 
-  let likeStyle = { color: "red" }; //Style for the like button when clicked.
-  let toggleLike = () => {
-    setLiked(!isLiked);
-    setClicks(clicks + 1);
+  // State to track the number of times the button has been clicked, initialized to 0.
+  const [clicks, setClicks] = useState(0);
+
+  // Style for the heart icon when it is in a liked state.
+  const likeStyle = { color: "red" };
+
+  // Function to toggle the 'liked' state and increment the click count.
+  const toggleLike = () => {
+    setLiked((prevIsLiked) => !prevIsLiked); // Toggle the 'liked' state.
+    setClicks((prevClicks) => prevClicks + 1); // Increment the click count.
     console.log("Toggled!");
   };
-  console.log();
+
   return (
     <>
-      <h2>You clicked : {clicks} times.</h2>
+      {/* Display the number of times the button has been clicked */}
+      <h2>You clicked: {clicks} times.</h2>
+
+      {/* The heart icon changes based on the 'isLiked' state */}
       <span onClick={toggleLike}>
         {isLiked ? (
           <i className="fa-solid fa-heart" style={likeStyle}></i>
