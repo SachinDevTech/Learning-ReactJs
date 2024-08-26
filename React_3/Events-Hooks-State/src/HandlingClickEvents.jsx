@@ -1,3 +1,5 @@
+import "./HandlingClickEvents.css"
+
 //These are supporting functions are used to create events.
 function Greet() {
     console.log("Hellow! Good Morning Sachin.");
@@ -14,7 +16,7 @@ function HandlingClickEvents() {
         <>
         <div>
             <button onClick={Greet}>Click Me!</button>
-            <p onClick={sayBye}>Lorem ipsum dolor sit amet.</p>
+            <p className="para-click-event" onClick={sayBye}>Lorem ipsum dolor sit amet.</p>
         </div>
         </>
     );

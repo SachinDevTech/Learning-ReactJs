@@ -4,7 +4,7 @@ import {HandlingNonClickEvents} from "./HandlingNonClickEvents"
 function App() {
   return (
     <>
-    {/* <HandlingClickEvents/> */}
+    <HandlingClickEvents/>
     <HandlingNonClickEvents/>
     </>
   )
