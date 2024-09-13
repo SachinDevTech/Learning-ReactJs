@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+.navbar div{
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+.navbar div:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: 10ms;
+}
