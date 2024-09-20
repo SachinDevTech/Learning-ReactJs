@@ -1,0 +1,17 @@
+div{
+    background-color: #78ecd3;
+
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.active-link{
+    color: rgb(97, 83, 83);
+    border: 2px solid green;
+}
