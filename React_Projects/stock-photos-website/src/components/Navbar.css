@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #007bff;
+    width: 100%;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .navbar-list li {
+    margin: 0 15px;
+    color: white;
+    cursor: pointer;
+  }
+  
